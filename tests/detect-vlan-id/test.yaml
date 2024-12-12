@@ -15,5 +15,11 @@ checks:
    count: 1
    match:
      event_type: alert
-     vlan[2]: 400
+     vlan[1]: 300
      alert.signature_id: 2
+- filter:
+   count: 1
+   match:
+     event_type: alert
+     vlan[2]: 400
+     alert.signature_id: 3
