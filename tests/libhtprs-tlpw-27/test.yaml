@@ -1,0 +1,62 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 216.170.126.185
+      dest_port: 80
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /Ee3r=1rBai5/yhcwMN/u=U/b/s3=C=
+      fileinfo.gaps: false
+      fileinfo.sha256: 94ca74f7deaa45d9ddff318488b3dba021a3085ac5fc9e6d6a3d9eb07b19af9a
+      fileinfo.size: 304
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 216.170.126.185
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:10.0) like
+        Gecko
+      http.length: 1129
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /Ee3r=1rBai5/yhcwMN/u%3DU/b/s3%3DC%3D
+      pcap_cnt: 10
+      proto: TCP
+      src_ip: 192.168.138.163
+      src_port: 49169
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.138.163
+      dest_port: 49169
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /Ee3r=1rBai5/yhcwMN/u=U/b/s3=C=
+      fileinfo.gaps: false
+      fileinfo.sha256: 7396de405f5cd0fe82b6a0da677c7479702c10988e3d0202fc22feee4b35b8c6
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 216.170.126.185
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:10.0) like
+        Gecko
+      http.length: 9259
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /Ee3r=1rBai5/yhcwMN/u%3DU/b/s3%3DC%3D
+      pcap_cnt: 24
+      proto: TCP
+      src_ip: 216.170.126.185
+      src_port: 80

@@ -1,0 +1,36 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.3.15.102
+      dest_port: 49180
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /iplk/balloon/
+      fileinfo.gaps: false
+      fileinfo.sha256: 08becc5dbed3799badf279a717804b48ebd6b8b41449f0de22c0b87c0f45cb26
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 85.104.59.244
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_port: 20
+      http.http_refer: http://85.104.59.244/iplk/balloon/
+      http.http_user_agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64;
+        Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729;
+        Media Center PC 6.0; .NET4.0C; .NET4.0E)
+      http.length: 11429
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /iplk/balloon/
+      proto: TCP
+      src_ip: 85.104.59.244
+      src_port: 20

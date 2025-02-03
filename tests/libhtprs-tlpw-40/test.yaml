@@ -1,0 +1,64 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 207.154.223.2
+      dest_port: 80
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: ed631f89292e2c8f0e967940e2203c813964e0ba25754a8ebf90a361980eca8a
+      fileinfo.size: 500
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 207.154.223.2
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64;
+        Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729;
+        Media Center PC 6.0)
+      http.length: 2540
+      http.protocol: HTTP/1.1
+      http.status: 500
+      http.url: /
+      pcap_cnt: 10
+      proto: TCP
+      src_ip: 10.4.4.104
+      src_port: 50114
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.4.4.104
+      dest_port: 50114
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: 4921b79d2bda6740bf5dfd75d7f84b5ce055461a5c276131871b3aadf9c4c288
+      fileinfo.size: 4096
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 207.154.223.2
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64;
+        Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729;
+        Media Center PC 6.0)
+      http.length: 5508
+      http.protocol: HTTP/1.1
+      http.status: 500
+      http.url: /
+      pcap_cnt: 12
+      proto: TCP
+      src_ip: 207.154.223.2
+      src_port: 80

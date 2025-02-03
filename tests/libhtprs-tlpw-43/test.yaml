@@ -1,0 +1,64 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 199.201.121.169
+      dest_port: 80
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /3yk=5/_z1H&/SEcb@&P~Qie/X
+      fileinfo.gaps: false
+      fileinfo.sha256: 9e80291d481ea2245372b013dbe842279d40891f36aef358ced06de15c1212c3
+      fileinfo.size: 8
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: yl8gnw.edu
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_refer: https://facebook.com/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
+      http.length: 1367
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /3yk=5/_z1H%26/SEcb@%26P~Qie/X
+      pcap_cnt: 9
+      proto: TCP
+      src_ip: 192.168.137.51
+      src_port: 49174
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.137.51
+      dest_port: 49174
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /3yk=5/_z1H&/SEcb@&P~Qie/X
+      fileinfo.gaps: false
+      fileinfo.sha256: a471485c27c16765dc1976e5cf0b3139d35acb4471659eeb0be4f7676099a9b7
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: yl8gnw.edu
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_refer: https://facebook.com/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36
+      http.length: 9569
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /3yk=5/_z1H%26/SEcb@%26P~Qie/X
+      pcap_cnt: 19
+      proto: TCP
+      src_ip: 199.201.121.169
+      src_port: 80

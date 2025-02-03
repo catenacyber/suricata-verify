@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.9.26.102
+      dest_port: 49319
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /search.php
+      fileinfo.gaps: false
+      fileinfo.sha256: dda94ff4df205b78a7dce0b9d7dbb26c74ffd9da3082c4153146d6de7a7f3af5
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: crocotan.com
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_user_agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0;
+        SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center
+        PC 6.0)
+      http.length: 7812
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /search.php?g=&k=HvTYbegEXTvS7RZLRExvMwp6F
+      pcap_cnt: 15
+      proto: TCP
+      src_ip: 45.32.144.151
+      src_port: 80

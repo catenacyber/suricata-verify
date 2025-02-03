@@ -1,0 +1,33 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.12.21.103
+      dest_port: 49276
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: b6ffe94cdf2f7457c1b8981daab0ce5d72ab6a1e59bb7c46bacb5e95e88ac286
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: laykni.com
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 7864
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /
+      proto: TCP
+      src_ip: 46.4.75.100
+      src_port: 80

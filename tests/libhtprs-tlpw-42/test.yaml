@@ -1,0 +1,150 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.88
+      dest_port: 49287
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /wp-content/themes/startingup/style.css
+      fileinfo.gaps: false
+      fileinfo.sha256: f87333d91b6ccac219d19c12221068fce8d91aa541c66813c8ce12a3cc0b71cb
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.travelbig.com
+      http.http_content_type: text/css
+      http.http_method: GET
+      http.http_refer: http://www.travelbig.com/category/videos/?utm_source=ao&utm_medium=clk&utm_campaign=videowaterfall2&utm_term=114388_121392_121392
+      http.http_user_agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64;
+        Trident/6.0)
+      http.length: 10478
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /wp-content/themes/startingup/style.css
+      pcap_cnt: 19
+      proto: TCP
+      src_ip: 104.28.10.17
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.88
+      dest_port: 49287
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /wp-content/themes/startingup/functions/wpzoom/assets/css/shortcodes.css
+      fileinfo.gaps: false
+      fileinfo.sha256: 62e194ded2b68412cb6758d5971000c0fb787f35a0ca1247bb91ea24df9e9602
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 1
+      http.hostname: www.travelbig.com
+      http.http_content_type: text/css
+      http.http_method: GET
+      http.http_refer: http://www.travelbig.com/category/videos/?utm_source=ao&utm_medium=clk&utm_campaign=videowaterfall2&utm_term=114388_121392_121392
+      http.http_user_agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64;
+        Trident/6.0)
+      http.length: 2196
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /wp-content/themes/startingup/functions/wpzoom/assets/css/shortcodes.css?ver=4.1.1
+      pcap_cnt: 27
+      proto: TCP
+      src_ip: 104.28.10.17
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.88
+      dest_port: 49287
+      event_type: fileinfo
+      fileinfo.file_id: 3
+      fileinfo.filename: /wp-content/themes/startingup/media-queries.css
+      fileinfo.gaps: false
+      fileinfo.sha256: 3d337d8dadd33d07b38afe339bc78a1e7fc5572056e302c2a5b805abe62fe251
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 2
+      http.hostname: www.travelbig.com
+      http.http_content_type: text/css
+      http.http_method: GET
+      http.http_refer: http://www.travelbig.com/category/videos/?utm_source=ao&utm_medium=clk&utm_campaign=videowaterfall2&utm_term=114388_121392_121392
+      http.http_user_agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64;
+        Trident/6.0)
+      http.length: 2295
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /wp-content/themes/startingup/media-queries.css?ver=4.1.1
+      pcap_cnt: 32
+      proto: TCP
+      src_ip: 104.28.10.17
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.88
+      dest_port: 49287
+      event_type: fileinfo
+      fileinfo.file_id: 4
+      fileinfo.filename: /wp-content/themes/startingup/styles/default.css
+      fileinfo.gaps: false
+      fileinfo.sha256: 30a4fca0a68e4a65e0604d33ca479db6a91a6f16c4950cb0cbbf1bb9aefaf0d7
+      fileinfo.size: 98
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 3
+      http.hostname: www.travelbig.com
+      http.http_content_type: text/css
+      http.http_method: GET
+      http.http_refer: http://www.travelbig.com/category/videos/?utm_source=ao&utm_medium=clk&utm_campaign=videowaterfall2&utm_term=114388_121392_121392
+      http.http_user_agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64;
+        Trident/6.0)
+      http.length: 114
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /wp-content/themes/startingup/styles/default.css?ver=4.1.1
+      pcap_cnt: 34
+      proto: TCP
+      src_ip: 104.28.10.17
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.88
+      dest_port: 49287
+      event_type: fileinfo
+      fileinfo.file_id: 5
+      fileinfo.filename: /wp-includes/js/jquery/jquery.js
+      fileinfo.gaps: false
+      fileinfo.sha256: bd5e0db9cef517b67da8660471c319de7c7990ed0d1ff96ef1c8cc1e64ea7db4
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 4
+      http.hostname: www.travelbig.com
+      http.http_content_type: application/javascript
+      http.http_method: GET
+      http.http_refer: http://www.travelbig.com/category/videos/?utm_source=ao&utm_medium=clk&utm_campaign=videowaterfall2&utm_term=114388_121392_121392
+      http.http_user_agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64;
+        Trident/6.0)
+      http.length: 4995
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /wp-includes/js/jquery/jquery.js?ver=1.11.1
+      proto: TCP
+      src_ip: 104.28.10.17
+      src_port: 80

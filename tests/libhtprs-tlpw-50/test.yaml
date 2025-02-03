@@ -1,0 +1,36 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.11.14.101
+      dest_port: 49186
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /site.php
+      fileinfo.gaps: false
+      fileinfo.sha256: 11d688e38c21cc23333b50c3b787444475f019554c4eaaae9c2c22bcc646503b
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: dqb.888315.info
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_refer: http://dqb.888315.info/index.php?uGXiNn6j=ty6-Mj320KABTnreh6pOoVnQh5dj-Bhp9An6n1Nldw-lkpK1wOJ0QGJO
+      http.http_user_agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0;
+        SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center
+        PC 6.0)
+      http.length: 19930
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /site.php?id=login
+      pcap_cnt: 29
+      proto: TCP
+      src_ip: 164.132.116.54
+      src_port: 80

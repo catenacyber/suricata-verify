@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.12.14.101
+      dest_port: 49347
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: 2c185788d4a8a4c27dff3b848c75ba2de88d62482e651a938ce89b3a39d813db
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 217.107.219.186
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_refer: http://192.241.150.92/?_subid=6if03d1b08ei5ucqk&_token=uuid_6if03d1b08ei5ucqk_6if03d1b08ei5ucqk5a31e1d8220e31.36384953
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 8265
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /?MjY1OTIw&IgzdewpYojrOyYXR0YWNrc1NZTUF0VURZSkNHdW5rbm93bg==&mfUznGWukGW=ZGVub21pbmF0aW9ucw==&ycfqXSLvX=cmVwb3J0&RVMvxfmQWUHyH=bWlzc2luZw==&tmiMxhDJBTOC=cmVwb3J0&asddfgdfg=xX_QMvWYbRXQDp3EKvncT6NEMVHRH0CL2Y2dmrHVefjaflWkzrDFTF_wozKATgSG6_FtdfJ&fWpXcD=Y2FwaXRhbA==&HytkYRlup=ZGVub21pbmF0aW9ucw==&USUszoTM=bWlzc2luZw==&IcpZMkZnhDFlnyS=dW5rbm93bg==&OPBdDA=bWlzc2luZw==&fnEqnRyRxJeWBS=cmVwb3J0&RtRIQBMNd=Y2FwaXRhbA==&vyTGPQ=c3Rvcm1lZA==&sdfsdfdfg=UDQfliRbRKQQ0zY5eUQwR9aj9jUSHyxWZhJ-G_kHZMw4W9sSQQbY-2QijzrIkQPsig1TH6GI&qhNYnmZGVub21pbmF0aW9ucw==
+      pcap_cnt: 14
+      proto: TCP
+      src_ip: 217.107.219.186
+      src_port: 80

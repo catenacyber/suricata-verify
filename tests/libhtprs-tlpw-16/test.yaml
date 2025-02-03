@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.6.15.105
+      dest_port: 49219
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /index.php
+      fileinfo.gaps: false
+      fileinfo.sha256: 5851c7948e76aa71f9c88eb75c9e57e77772ba3a75018cd3c501bdea8e8b67b2
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: ayuegdsfugasfugausdkiga.xyz
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_refer: '[[[[[[[[ info removed ]]]]]]]]]'
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like
+        Gecko
+      http.length: 9067
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /index.php?xibsYziX18M=4Ca9YTf21PMMSC-NgfAaoVnVjJAy9BBtrQj-mlM2JFqjkpDgk7MmRGVO
+      pcap_cnt: 20
+      proto: TCP
+      src_ip: 45.63.26.202
+      src_port: 80

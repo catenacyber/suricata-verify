@@ -1,0 +1,33 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.2.12.101
+      dest_port: 50079
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /g/rfer=nmn_fr_gees_1/42-332638-0264389/field-keywords=toys
+      fileinfo.gaps: false
+      fileinfo.sha256: 8b1ca8e6833f7237e94520f3a59ddcd69ea7c8a094b724286fb4fa748fa21cbe
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.amazon.com
+      http.http_method: GET
+      http.http_user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101
+        Firefox/85.0
+      http.length: 8328
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /g/rfer=nmn_fr_gees_1/42-332638-0264389/field-keywords=toys
+      pcap_cnt: 18
+      proto: TCP
+      src_ip: 138.201.149.51
+      src_port: 80

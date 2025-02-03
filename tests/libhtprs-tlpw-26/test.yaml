@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.3.15.105
+      dest_port: 49296
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: d1a1fce82cb917425eecc81291a506ebb548fc48a3f4d2f07559c958ce4c248d
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: try.bannerautoservice.com
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_refer: http://www.activaclinics.com/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 10513
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /?ct=vibration&fix=vibration.124uq71.406s2b0j4&oq=m2Eo_IsebRQbALkjEyAclM1mthfV14Wpa_6h0TUmEWZgZfQ_kSNUTp1u9CQUbI&que=vibration.85sy96.406l3o7o6&q=wX_QMvXcJwDQDobGMvrESLtGNknQA0KK2I72_dqyEoH9c2nihNzUSkr26B2aC&biw=vibration.97lh116.406o4g1t7
+      pcap_cnt: 16
+      proto: TCP
+      src_ip: 188.227.75.37
+      src_port: 80

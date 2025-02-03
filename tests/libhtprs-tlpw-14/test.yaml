@@ -1,0 +1,61 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 134.0.14.3
+      dest_port: 80
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /iz/
+      fileinfo.gaps: false
+      fileinfo.sha256: 909663bb7a6999d2302ec84e04d2637f50bc90609df21542d665bda661f431d2
+      fileinfo.size: 1312
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.thestokelife.com
+      http.http_method: POST
+      http.http_refer: http://www.thestokelife.com/iz/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0;
+        rv:11.0) like Gecko
+      http.length: 0
+      http.protocol: HTTP/1.1
+      http.url: /iz/
+      pcap_cnt: 15
+      proto: TCP
+      src_ip: 10.1.4.102
+      src_port: 49224
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.1.4.102
+      dest_port: 49224
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /iz/
+      fileinfo.gaps: false
+      fileinfo.sha256: d5401508453d5581a69bb8730f5594b6fa1d0da7a1a271c17ad261cc7461f50f
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.thestokelife.com
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_refer: http://www.thestokelife.com/iz/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0;
+        rv:11.0) like Gecko
+      http.length: 6222
+      http.protocol: HTTP/1.1
+      http.status: 404
+      http.url: /iz/
+      proto: TCP
+      src_ip: 134.0.14.3
+      src_port: 80

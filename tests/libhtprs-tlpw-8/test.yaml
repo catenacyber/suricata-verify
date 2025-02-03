@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 172.16.121.129
+      dest_port: 49509
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: 3b0876be10b187524e540f604e56cef2935d0df71fa405c5ba53fc982901a0e6
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.nachirobotics.com
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_refer: http://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwji2rvo7sjKAhWDvYMKHW0xB3MQFggbMAA&url=http%3A%2F%2Fwww.nachirobotics.com%2F&usg=AFQjCNF0yR_rWJuU5AD3-_TNlvX5k8fIwA&bvm=bv.112766941,d.amc
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like
+        Gecko
+      http.length: 7847
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /
+      pcap_cnt: 18
+      proto: TCP
+      src_ip: 216.89.223.133
+      src_port: 80

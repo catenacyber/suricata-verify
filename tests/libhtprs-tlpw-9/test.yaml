@@ -1,0 +1,92 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.7.5.101
+      dest_port: 49188
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /78C2-BD43-89F3-0089-9CD2/language
+      fileinfo.gaps: false
+      fileinfo.sha256: 143ed512182b02c0f3683babf3cb017ea675d1c3f90f8173baca5ea055388a2e
+      fileinfo.size: 351
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 1
+      http.hostname: 27lelchgcvs2wpm7.asd3r3.top
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 1550
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /78C2-BD43-89F3-0089-9CD2/language
+      pcap_cnt: 14
+      proto: TCP
+      src_ip: 216.189.148.182
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.7.5.101
+      dest_port: 49188
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /media/bs3/css/bootstrap.min.css
+      fileinfo.gaps: false
+      fileinfo.sha256: 48f34750db735135f771d6a2b3482201ee8be1afe6d97bb4914590fddc425795
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 2
+      http.hostname: 27lelchgcvs2wpm7.asd3r3.top
+      http.http_content_type: text/css
+      http.http_method: GET
+      http.http_refer: http://27lelchgcvs2wpm7.asd3r3.top/78C2-BD43-89F3-0089-9CD2/language
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 13280
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /media/bs3/css/bootstrap.min.css
+      pcap_cnt: 28
+      proto: TCP
+      src_ip: 216.189.148.182
+      src_port: 80
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.7.5.101
+      dest_port: 49188
+      event_type: fileinfo
+      fileinfo.file_id: 3
+      fileinfo.filename: /media/images/pt.png
+      fileinfo.gaps: false
+      fileinfo.sha256: 34927e2d62aa19763a5c817f7f2cca90430196562b5a109f1ec50e621d577ec7
+      fileinfo.size: 2764
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 3
+      http.hostname: 27lelchgcvs2wpm7.asd3r3.top
+      http.http_content_type: image/png
+      http.http_method: GET
+      http.http_refer: http://27lelchgcvs2wpm7.asd3r3.top/78C2-BD43-89F3-0089-9CD2/language
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 2797
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /media/images/pt.png
+      pcap_cnt: 42
+      proto: TCP
+      src_ip: 216.189.148.182
+      src_port: 80

@@ -1,0 +1,31 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.9.5.103
+      dest_port: 49158
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /
+      fileinfo.gaps: false
+      fileinfo.sha256: 00ce6ee3dba8892e6475cec813f4da0d9c0b2718737dd2d6247e917c178f1f62
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: www.google.com.br
+      http.http_method: GET
+      http.http_user_agent: Mozilla/3.0 (compatible; Indy Library)
+      http.length: 6451
+      http.protocol: HTTP/1.1
+      http.url: /
+      pcap_cnt: 15
+      proto: TCP
+      src_ip: 216.58.193.163
+      src_port: 80

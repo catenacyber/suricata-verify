@@ -1,0 +1,62 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 108.61.179.182
+      dest_port: 443
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /puhqjktrkgem/vnwsl=_=on=?~jn=sm~a-bl@=+fb/?hb?$gisskswt?vvap
+      fileinfo.gaps: false
+      fileinfo.sha256: d3bb0d59e354ea843e790801303a46e880219996c6850ddd4c85a83e08c41d92
+      fileinfo.size: 1
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 108.61.179.182
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:10.0) like
+        Gecko
+      http.length: 2710
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /puhqjktrkgem/vnwsl=_=on=%3F%7Ejn=sm%7Ea%2Dbl@%3D%2Bfb/%3Fhb%3F$gisskswt%3Fvvap
+      pcap_cnt: 11
+      proto: TCP
+      src_ip: 192.168.138.163
+      src_port: 49179
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.138.163
+      dest_port: 49179
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /puhqjktrkgem/vnwsl=_=on=?~jn=sm~a-bl@=+fb/?hb?$gisskswt?vvap
+      fileinfo.gaps: false
+      fileinfo.sha256: 44c58f3905cf6916ca758c3d89b1943a70726ffd73a3f4eb1de23ee78b8a58a6
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 108.61.179.182
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:10.0) like
+        Gecko
+      http.length: 9485
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /puhqjktrkgem/vnwsl=_=on=%3F%7Ejn=sm%7Ea%2Dbl@%3D%2Bfb/%3Fhb%3F$gisskswt%3Fvvap
+      pcap_cnt: 19
+      proto: TCP
+      src_ip: 108.61.179.182
+      src_port: 443

@@ -1,0 +1,35 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 172.16.134.128
+      dest_port: 49432
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /bapi
+      fileinfo.gaps: false
+      fileinfo.sha256: 62f775f0df26f468de448e91182a5739140a682665d32ec676d0f9d8d5d6bc1d
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: 8304.bapi.adsafeprotected.com
+      http.http_content_type: text/javascript
+      http.http_method: GET
+      http.http_refer: http://score.feed-xml.com/ias.html?aid=12046&sid=1801&kw=arizona+court+records+broker+leads&ip=[[redacted]]&uid=56a7804aca94a778087240&url=http://c.feed-xml.com/g/cvc0cccx8a3qaau9028852a453b98718801959e8a97c218408x
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 7726
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /bapi?anId=8304&advId=VIDEE&campId=VIDEETV&pubId=12046&chanId=1801&placementId=56a7804aca94a778087240
+      pcap_cnt: 17
+      proto: TCP
+      src_ip: 69.172.216.161
+      src_port: 80

@@ -1,0 +1,64 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 79.168.145.215
+      dest_port: 80
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /iSNams/RbqIAS4+kn/71q~+T
+      fileinfo.gaps: false
+      fileinfo.sha256: 6c03f4014a9c083141eb1ca579bce800a678863be1b0e738bda85f491d8eaade
+      fileinfo.size: 3
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: mkcxmosff.me
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_refer: http://youtube.com/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/39.0.2171.95 Safari/537.36
+      http.length: 0
+      http.protocol: HTTP/1.1
+      http.status: 404
+      http.url: /iSNams/RbqIAS4+kn/71q~%2BT
+      pcap_cnt: 9
+      proto: TCP
+      src_ip: 192.168.122.177
+      src_port: 49215
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 192.168.122.177
+      dest_port: 49215
+      event_type: fileinfo
+      fileinfo.file_id: 2
+      fileinfo.filename: /iSNams/RbqIAS4+kn/71q~+T
+      fileinfo.gaps: false
+      fileinfo.sha256: 4fd6c8f69503256fc8f92b277b1a28ef13c553e482cc4793399e5c7462319f10
+      fileinfo.size: 145
+      fileinfo.state: CLOSED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: mkcxmosff.me
+      http.http_content_type: text/html
+      http.http_method: POST
+      http.http_refer: http://youtube.com/
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/39.0.2171.95 Safari/537.36
+      http.length: 145
+      http.protocol: HTTP/1.1
+      http.status: 404
+      http.url: /iSNams/RbqIAS4+kn/71q~%2BT
+      pcap_cnt: 13
+      proto: TCP
+      src_ip: 79.168.145.215
+      src_port: 80

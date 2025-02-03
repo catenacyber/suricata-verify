@@ -1,0 +1,34 @@
+# *** Add configuration here ***
+
+args:
+- -k none
+
+checks:
+- filter:
+    count: 1
+    match:
+      app_proto: http
+      dest_ip: 10.12.20.102
+      dest_port: 49185
+      event_type: fileinfo
+      fileinfo.file_id: 1
+      fileinfo.filename: /webstore/BBojeGPkliSY9Yvo4O/rUuWmEuZT/umCzM12DqKN5aaIgQH81/ySVvpEaNn_2F0wyBERm/Efe3lKa_2BfbfhhemQjdQy/55ilprOCdQZUB/MyLn4acH/DO_2FnZTiEdgGLZWFUDO9qt/jTIcZEyiyI/HboGpE1_2BNerGbNj/VUQFQpIQQcMl/OBKeYbHxCRg/PA_2BK5EJ9H67X/rgPIS9HkBmcU4siN3SXz8/A9ym2JEC0vxUzUUS/N0l7ruwqnvu/C
+      fileinfo.gaps: false
+      fileinfo.sha256: cb040e60004926c6aa70f4356a28849cde03a639aaa68dcb355c58a4d3ea7a49
+      fileinfo.size: 4096
+      fileinfo.state: TRUNCATED
+      fileinfo.stored: true
+      fileinfo.tx_id: 0
+      http.hostname: api2.doter.at
+      http.http_content_type: text/html
+      http.http_method: GET
+      http.http_user_agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0)
+        like Gecko
+      http.length: 13841
+      http.protocol: HTTP/1.1
+      http.status: 200
+      http.url: /webstore/BBojeGPkliSY9Yvo4O/rUuWmEuZT/umCzM12DqKN5aaIgQH81/ySVvpEaNn_2F0wyBERm/Efe3lKa_2BfbfhhemQjdQy/55ilprOCdQZUB/MyLn4acH/DO_2FnZTiEdgGLZWFUDO9qt/jTIcZEyiyI/HboGpE1_2BNerGbNj/VUQFQpIQQcMl/OBKeYbHxCRg/PA_2BK5EJ9H67X/rgPIS9HkBmcU4siN3SXz8/A9ym2JEC0vxUzUUS/N0l7ruwqnvu/C
+      pcap_cnt: 26
+      proto: TCP
+      src_ip: 49.51.173.233
+      src_port: 80
