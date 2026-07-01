@@ -790,7 +790,7 @@ class TestRunner:
             return None
         return lines
 
-    def terminate_process(self, p):
+    def terminate_process(self, delay, p):
         p.terminate()
 
     def run(self, outdir):
@@ -881,7 +881,7 @@ class TestRunner:
 
                 if "timeout" in self.config:
                     delay = self.config["timeout"]
-                    timer = threading.Timer(delay, self.terminate_process, p)
+                    timer = threading.Timer(delay, self.terminate_process, (delay, p))
                     timer.start()
 
                 if "unix-commands" in self.config:
